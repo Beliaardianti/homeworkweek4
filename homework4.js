@@ -22,7 +22,7 @@ for (let i = 0; i < NilaiRandom.length; i++) {
 
 // menghitung min dan max secara manual
 // Menentukan nilai minimum (min) dan nilai maksimum (max) 
-const nilaiMin = (array) => {
+function nilaiMin (array){
   let min = array[0];
   for (let i = 1; i < array.length; i++) {
     if (array[i] < min) {
@@ -30,34 +30,43 @@ const nilaiMin = (array) => {
     }
   }
   return min;
-};
 
-
-const nilaiMax = (array) => {
-let max = array[0];
-for (let i = 1; i < array.length; i++) {
-  if (array[i] > max) {
-    max = array[i];
-  }
 }
-return max;
-};
+
+
+
+function nilaiMax (array){
+  let max = array[0];
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > max) {
+      max = array[i];
+    }
+  }
+  return max;
+
+} 
+
 
 // Menghitung Total 
-const Total = (array) => {
+function Total(array) {
   let total = 0;
   for (let i = 0; i < array.length; i++) {
     total += array[i];
   }
   return total;
-};
+
+}
+
 
 // Menghitung Rata Rata 
 // Saya menggunakan var karena dari soal untuk implementasi var 
-var ratarata = (array) => {
+
+
+function ratarata (array){
   var total = Total(array);
   return total / array.length;
-};
+
+}
 
 
 const minGenap = nilaiMin(arrayGenap);
@@ -69,7 +78,7 @@ const maxGanjil = nilaiMax(arrayGanjil);
 const totalGanjil = Total(arrayGanjil);
 const ratarataGanjil = ratarata(arrayGanjil);
 
-console.log("Array dengan jumlah index 100", NilaiRandom);
+console.log("Array Random dengan jumlah index 100", NilaiRandom);
 console.log("Array genap dengan jumlah index 50", arrayGenap);
 console.log(" Array ganjil dengan jumlah index 50",arrayGanjil);
 console.log("\n");
