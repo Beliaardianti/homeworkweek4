@@ -97,28 +97,31 @@ console.log("\n");
 
 // Perbandingan nilai min, max, total dan rata rata
 console.log("***** Perbandingan nilai min, max, total dan rata rata *****");
-if (minGenap >= minGanjil) {
-  console.log("Nilai Min pada array genap kecil besar dari nilai Min array ganjil");
-} else {
-  console.log("Nilai min pada array genap dan nilai min pada array ganjil memilki nilai yang sama");
-}
 
-if (maxGanjil <= maxGenap) {
-  console.log("Nilai Max pada array genap lebih besar dari nilai Max array ganjil");
-} else {
-  console.log("Nilai min pada array genap dan nilai min pada array ganjil memilki nilai yang sama");
-}
+  if (minGenap >= minGanjil) {
+    console.log("Nilai Min pada array genap lebih besar dari nilai Min array ganjil");
+  } else {
+    console.log("Nilai min pada array genap dan nilai min pada array ganjil memilki nilai yang sama");
+  }
+  
+  if (maxGanjil <= maxGenap) {
+    console.log("Nilai Max pada array ganjil lebih kecil dari nilai Max array genap");
+  } else {
+    console.log("Nilai min pada array genap dan nilai min pada array ganjil memilki nilai yang sama");
+  }
+  
+  if (ratarataGanjil >= ratarataGenap) {
+    console.log("Rata-rata array ganjil lebih besar dari array genap.");
+  } else if (ratarataGanjil <= ratarataGenap) {
+    console.log("Rata-rata array ganjil lebih kecil dari array genap.");
+  } else {
+    console.log("Rata-rata memiliki nilai yang sama antara array genap dan ganjil.");
+  }
+  
+  if (totalGenap === totalGanjil) {
+    console.log("Total memiliki nilai yang sama antara array genap dan ganjil.");
+  } else {
+    console.log("Total berbeda antara array genap dan ganjil.");
+  }
 
-if (ratarataGanjil >= ratarataGenap) {
-  console.log("Rata-rata array ganjil lebih besar dari array genap.");
-} else if (ratarataGanjil <= ratarataGenap) {
-  console.log("Rata-rata array ganjil lebih kecil dari array genap.");
-} else {
-  console.log("Rata-rata memiliki nilai yang sama antara array genap dan ganjil.");
-}
 
-if (totalGenap === totalGanjil) {
-  console.log("Total memiliki nilai yang sama antara array genap dan ganjil.");
-} else {
-  console.log("Total berbeda antara array genap dan ganjil.");
-}
